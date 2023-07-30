@@ -6,7 +6,7 @@ Find me on Discord for requests @Aramaki#2109
 ![2023070416250800_s](https://github.com/Mung-Daddy/Tinfoil-Themes/assets/88863017/f0ecf410-3a7a-4676-a4da-7368549d43d5)
 
 
-** aramaki.json / index.tfl**
+**index.tfl**
 you can add the .json link into your file brower or you can download the index.tfl file to the root of your SD card and all the themes will be installed
 ![2023070819071700_s](https://github.com/Mung-Daddy/Tinfoil-Themes/assets/88863017/1e7a8593-568b-4710-a112-bc2eaa5f30ef)
 
