@@ -1,0 +1,13 @@
+# A-Theme Installer manifest
+# Format: Display Name|folder_name|optional,extra,assets
+#
+# - folder_name must match a real folder in this repo, containing that
+#   theme's theme.json (e.g. Tinfoil-Themes/Aramaki_Midjourney/theme.json)
+# - The third field is only needed if that theme's theme.json points at
+#   LOCAL sdmc: paths for its logo/music (rather than a remote https:// URL)
+#   — list those filenames so the installer downloads them alongside
+#   theme.json, into the same folder on the SD card.
+# - Lines starting with # are ignored. Keep this file plain text, UTF-8.
+
+Aramaki Midjourney|Aramaki_Midjourney|
+Aramaki 100 Acre Wood|Aramaki_100acreWood|logo.png,shop-theme.mp3
