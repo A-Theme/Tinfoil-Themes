@@ -22,10 +22,22 @@ project is built on.** Every theme's `.zip`, every screenshot, and the
 every other A-Theme tool exists to do something with what's in this
 repo — edit it, preview it, or install it.
 
+### 🎲 A few themes at random
+
+<!-- SCREENSHOTS:START -->
 <div align="center">
+<em>Rotates automatically — check back for a different set of themes.</em>
+</div>
+<!-- SCREENSHOTS:END -->
 
-![Tinfoil theme preview](https://github.com/Mung-Daddy/Tinfoil-Themes/assets/88863017/26dc48a0-0c60-4e03-ba36-37b145a13841)
-
+<div align="center">
+<div align="center">
+<sub>Refreshed automatically every hour by <a href=".github/workflows/rotate-screenshots.yml">a GitHub Action</a> pulling random images straight from <code>Theme Screen Shots/</code> — nothing hand-picked, nothing hardcoded.</sub>
+<br/>
+<a href="https://github.com/A-Theme/Tinfoil-Themes/actions/workflows/rotate-screenshots.yml"><img src="https://img.shields.io/badge/%F0%9F%94%80-Shuffle%20now-9d4edd?style=for-the-badge" alt="Shuffle now"/></a>
+<br/>
+<sub><em>(opens the workflow's Actions page — click "Run workflow" there for an instant reshuffle instead of waiting for the next hourly run. Needs write access to this repo.)</em></sub>
+</div>
 </div>
 
 ---
@@ -77,28 +89,9 @@ by hand.
 
 ---
 
-### 🎲 A few themes at random
-
-<!-- SCREENSHOTS:START -->
-<div align="center">
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023123112385800_s.jpg" width="260"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023091222040800_s.jpg" width="260"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023111913565500_s.jpg" width="260"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112721410600_s.jpg" width="260"/>
-</div>
-<!-- SCREENSHOTS:END -->
-
-<sub>Refreshed daily by <a href=".github/workflows/rotate-screenshots.yml">a GitHub Action</a> pulling random images straight from <code>Theme Screen Shots/</code> — nothing hand-picked, nothing hardcoded.</sub>
-
 ### Find me on Discord for requests
 
 **[@Aramaki#2109](https://discord.gg/jhJ9jcUn)**
-
-<div align="center">
-
-![Tinfoil theme example](https://github.com/Mung-Daddy/Tinfoil-Themes/assets/88863017/f0ecf410-3a7a-4676-a4da-7368549d43d5)
-
-</div>
 
 ---
 
