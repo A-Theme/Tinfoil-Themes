@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff3c50,50:9d4edd,100:00c2ff&height=200&section=header&text=TINFOIL-THEMES&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=the%20theme%20database%20behind%20everything%20else&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff3c50,50:9d4edd,100:00c2ff&height=200&section=header&text=TINFOIL-THEMES&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=the%20database%20behind%20the%20whole%20A-Theme%20project&descAlignY=58&descSize=18" width="100%"/>
 
 <img src="https://raw.githubusercontent.com/A-Theme/Theme-App/main/assets/logo.png" width="90" height="90" alt="A-Theme logo"/>
 
@@ -15,19 +15,67 @@
 
 ## Welcome to A-Theme
 
-Some of the coolest Tinfoil themes you can find, all in one place — this
-repo is the actual database every other A-Theme tool reads from: the
-[visual editor](https://github.com/A-Theme/Theme-App) lets you browse and
-edit them from a browser or desktop, and the
-[Switch homebrew installer](https://github.com/A-Theme/Switch-Theme-Installer)
-reads this exact same `themes.json` manifest to browse and install them
-straight from your console.
+Some of the coolest Tinfoil themes you can find, all in one place — and
+not just a collection. **This repo is the foundation the entire A-Theme
+project is built on.** Every theme's `.zip`, every screenshot, and the
+`themes.json` manifest that ties them together all live right here, and
+every other A-Theme tool exists to do something with what's in this
+repo — edit it, preview it, or install it.
 
 <div align="center">
 
 ![Tinfoil theme preview](https://github.com/Mung-Daddy/Tinfoil-Themes/assets/88863017/26dc48a0-0c60-4e03-ba36-37b145a13841)
 
 </div>
+
+---
+
+## 🧩 How the whole A-Theme project fits together
+
+Three pieces, one shared foundation — this repo sits underneath both of
+the other two, and neither needs a separate copy of anything:
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+
+**📦 Tinfoil-Themes**
+<br><sub>you are here</sub>
+
+The database itself — every theme's `.zip`, every screenshot, and the
+`themes.json` manifest listing them all, hosted right from this repo via
+GitHub Pages.
+
+</td>
+<td width="33%" valign="top" align="center">
+
+**🎨 [Theme-App](https://github.com/A-Theme/Theme-App)**
+<br><sub>edit</sub>
+
+Reads this repo's theme list live. Browse, load, and customize any theme
+with real color pickers and palette generation — in a browser, as an
+installable app, or as a Windows desktop app.
+
+</td>
+<td width="33%" valign="top" align="center">
+
+**🎮 [Switch-Theme-Installer](https://github.com/A-Theme/Switch-Theme-Installer)**
+<br><sub>install</sub>
+
+Native Switch homebrew that reads this exact same `themes.json` — browse,
+preview, and generate a palette from a theme's own background, all with a
+controller, all on-console, straight to your SD card.
+
+</td>
+</tr>
+</table>
+
+Both tools point at the same `themes.json` and download the same `.zip`
+files from this repo — add a theme here once, and it's immediately
+browsable from a PC, a phone, or a Switch, with nothing to keep in sync
+by hand.
+
+---
 
 ### 🎲 A few themes at random
 
@@ -51,10 +99,20 @@ straight from your console.
 
 ---
 
-## 📥 How to install a theme
+## 📥 Installing a theme — three ways
 
-**Manually:** download the `.zip` and extract it to `switch/tinfoil/themes`
-on your SD card.
+### 🎮 On your Switch, no PC needed
+
+Grab **[Switch-Theme-Installer](https://github.com/A-Theme/Switch-Theme-Installer)** —
+a native homebrew app that reads this repo's theme list directly. Browse
+with a controller, preview a theme's real colors and layout before
+committing, even regenerate its palette straight from its own background
+image, right on the console. Pick a theme, press A, done.
+
+### 💻 Manually
+
+Download the `.zip` and extract it to `switch/tinfoil/themes` on your SD
+card.
 
 <div align="center">
 
@@ -62,9 +120,10 @@ on your SD card.
 
 </div>
 
-**All at once with `index.tfl`:** download the `index.tfl` file to the
-root of your SD card and every theme in this repo gets installed
-automatically.
+### 📄 All at once with `index.tfl`
+
+Download the `index.tfl` file to the root of your SD card and every theme
+in this repo gets installed automatically.
 
 <div align="center">
 
@@ -72,31 +131,29 @@ automatically.
 
 </div>
 
-**On-console, no PC needed:** grab the
-[Switch-Theme-Installer](https://github.com/A-Theme/Switch-Theme-Installer)
-homebrew app — it browses this exact list with a controller, previews each
-theme's real colors and layout before you commit, and installs directly to
-your SD card.
-
 ---
 
 ## 🎨 Want to customize a theme first?
 
-Use the [A-Theme visual editor](https://github.com/A-Theme/Theme-App) —
+Use the **[A-Theme visual editor](https://github.com/A-Theme/Theme-App)** —
 browse this same theme list, tweak any color with a real picker, generate
 a palette from scratch or straight from a background image, and export
 your own version. Works in-browser, as an installable app, or as a
-Windows desktop app.
+Windows desktop app. Whatever you build there reads from and can be
+shared right back into this same database.
 
 ---
 
-## 🔗 Part of the A-Theme project
+## 🔗 The whole A-Theme project
 
 <div align="center">
 
+[![Tinfoil-Themes](https://img.shields.io/badge/Tinfoil--Themes-theme%20database-ff3c50?style=for-the-badge)](https://github.com/A-Theme/Tinfoil-Themes)
 [![Theme-App](https://img.shields.io/badge/Theme--App-visual%20editor-00c2ff?style=for-the-badge)](https://github.com/A-Theme/Theme-App)
-[![Switch-Theme-Installer](https://img.shields.io/badge/Switch--Theme--Installer-on--console%20installer-ff3c50?style=for-the-badge)](https://github.com/A-Theme/Switch-Theme-Installer)
-[![A-Theme](https://img.shields.io/badge/A--Theme-org-9d4edd?style=for-the-badge)](https://github.com/A-Theme)
+[![Switch-Theme-Installer](https://img.shields.io/badge/Switch--Theme--Installer-on--console%20installer-9d4edd?style=for-the-badge)](https://github.com/A-Theme/Switch-Theme-Installer)
+
+[![A-Theme](https://img.shields.io/badge/A--Theme-org-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/A-Theme)
+[![Website](https://img.shields.io/badge/Web-a--theme.ca-e60012?style=for-the-badge&logo=googlechrome&logoColor=white)](https://a-theme.ca)
 
 </div>
 
