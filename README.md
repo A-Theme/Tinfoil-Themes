@@ -81,7 +81,10 @@ by hand.
 
 <!-- SCREENSHOTS:START -->
 <div align="center">
-<em>Rotates automatically — check back for a different set of themes.</em>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023123112385800_s.jpg" width="260"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023091222040800_s.jpg" width="260"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023111913565500_s.jpg" width="260"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112721410600_s.jpg" width="260"/>
 </div>
 <!-- SCREENSHOTS:END -->
 
