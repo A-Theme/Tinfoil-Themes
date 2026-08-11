@@ -26,9 +26,7 @@ repo — edit it, preview it, or install it.
 
 <!-- SCREENSHOTS:START -->
 <div align="center">
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112721403400_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023091721235000_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2024030719595700-74BC04234CE7B5A3EECD5F5A8A5D8C15.jpg" width="320"/>
+<em>Rotates automatically — check back for a different set of themes.</em>
 </div>
 <!-- SCREENSHOTS:END -->
 
