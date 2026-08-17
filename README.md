@@ -26,9 +26,9 @@ repo — edit it, preview it, or install it.
 
 <!-- SCREENSHOTS:START -->
 <div align="center">
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023091222040500_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023091222032200_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023111221585100_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112721405600_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/Tindoil_Screen.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112721411200_s.jpg" width="320"/>
 </div>
 <!-- SCREENSHOTS:END -->
 
