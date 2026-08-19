@@ -1,0 +1,76 @@
+name: rotate screenshots
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # once a day, 07:00 UTC (~3am Eastern)
+  workflow_dispatch:        # lets you trigger it manually too
+  push:
+    branches:
+      - main
+    paths:
+      - "Theme Screen Shots/**"   # also refresh immediately when new screenshots are added
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pick random screenshots and update README
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const folder = 'Theme Screen Shots';
+            const exts = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+            const files = fs.readdirSync(folder).filter(f => exts.includes(path.extname(f).toLowerCase()));
+
+            if (files.length === 0) {
+              console.log('No image files found in "' + folder + '" -- nothing to rotate.');
+              return;
+            }
+
+            function shuffle(arr) {
+              const a = [...arr];
+              for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+              }
+              return a;
+            }
+
+            const N = Math.min(3, files.length);
+            const chosen = shuffle(files).slice(0, N);
+
+            const branch = 'main';
+            const repo = 'A-Theme/Tinfoil-Themes';
+            const imgTags = chosen.map(f =>
+              `<img src="https://raw.githubusercontent.com/${repo}/${branch}/${encodeURIComponent(folder)}/${encodeURIComponent(f)}" width="320"/>`
+            ).join('\n');
+            const block = `<div align="center">\n${imgTags}\n</div>`;
+
+            let readme = fs.readFileSync('README.md', 'utf8');
+            if (!readme.includes('<!-- SCREENSHOTS:START -->') || !readme.includes('<!-- SCREENSHOTS:END -->')) {
+              console.log('README.md is missing the SCREENSHOTS:START/END markers -- nothing to update.');
+              return;
+            }
+
+            const updated = readme.replace(
+              /<!-- SCREENSHOTS:START -->[\s\S]*?<!-- SCREENSHOTS:END -->/,
+              `<!-- SCREENSHOTS:START -->\n${block}\n<!-- SCREENSHOTS:END -->`
+            );
+
+            fs.writeFileSync('README.md', updated);
+            console.log(`Rotated in: ${chosen.join(', ')}`);
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Rotate README screenshots [skip ci]"
+          git push
