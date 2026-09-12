@@ -89,6 +89,25 @@ files from this repo — add a theme here once, and it's immediately
 browsable from a PC, a phone, or a Switch, with nothing to keep in sync
 by hand.
 
+### 🟢 And a fourth piece, for a different app
+
+The project now themes a **second** application: the **RomM Switch client**,
+which is a full SDL2 homebrew app rather than a shop. That is a separate
+format and a separate database, so it does not touch anything here:
+
+- **[RomM-Themes](https://github.com/A-Theme/RomM-Themes)** — the theme
+  database for it. A RomM theme is a *folder* with a `theme.json`, able to
+  change 19 semantic colour roles, the background (with motion and sprite-sheet
+  animation), the UI font, mascot art, and the music. Every submission is
+  validated in CI against the same rules the client itself enforces.
+- **[The RomM editor](https://github.com/A-Theme/Theme-App/blob/main/romm-theme-editor.html)**
+  — lives in Theme-App beside the Tinfoil one, with a live preview of the real
+  client screens, WCAG contrast checks, and a live texture-memory budget for
+  animated backgrounds.
+
+Nothing in this repo's `themes.json` or `.zip` layout changes because of it —
+the two databases are deliberately independent.
+
 ---
 
 ### Find me on Discord for requests
