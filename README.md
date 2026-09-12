@@ -46,8 +46,10 @@ repo — edit it, preview it, or install it.
 
 ## 🧩 How the whole A-Theme project fits together
 
-Three pieces, one shared foundation — this repo sits underneath both of
-the other two, and neither needs a separate copy of anything:
+Three pieces share this foundation — this repo sits underneath the Tinfoil
+editor and the on-console installer, and neither needs a separate copy of
+anything. (Theming for the RomM client is a separate format with its own
+database; see [below](#-and-a-fourth-piece-for-a-different-app).)
 
 <table>
 <tr>
