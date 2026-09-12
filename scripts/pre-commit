@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# Pre-commit hook: block commits that would leak a token, key, or credential file.
+#
+# Install:
+#   ln -sf ../../scripts/pre-commit .git/hooks/pre-commit     # macOS/Linux/WSL
+#   copy scripts\pre-commit .git\hooks\pre-commit             # Windows
+#
+# Bypass (only if you are certain):  git commit --no-verify
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT" || exit 1
+
+RED=$'\033[0;31m'; RST=$'\033[0m'
+FAIL=0
+
+STAGED=$(git diff --cached --name-only --diff-filter=ACM)
+[[ -z "$STAGED" ]] && exit 0
+
+while IFS= read -r f; do
+    case "$(basename "$f")" in
+        .env|.env.local|config.json|credentials.json)
+            echo "${RED}BLOCKED${RST}: $f looks like a credential file"; FAIL=1 ;;
+        *.pem|*.p12|*.pfx|*.jks)
+            echo "${RED}BLOCKED${RST}: $f looks like a private key"; FAIL=1 ;;
+    esac
+done <<< "$STAGED"
+
+while IFS= read -r f; do
+    [[ -f "$f" ]] || continue
+    case "$f" in scripts/scan-secrets.sh|scripts/pre-commit) continue ;; esac
+    case "$f" in *.zip|*.7z|*.jpg|*.jpeg|*.png|*.gif|*.webp) continue ;; esac
+    if git show ":$f" 2>/dev/null | grep -qE '(ghp_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{22,}|AKIA[0-9A-Z]{16}|discord\.com/api/webhooks/[0-9]+/[A-Za-z0-9_-]+)'; then
+        echo "${RED}BLOCKED${RST}: $f contains what looks like a token, key, or webhook URL"
+        FAIL=1
+    fi
+    if git show ":$f" 2>/dev/null | grep -q -- '-----BEGIN [A-Z ]*PRIVATE KEY-----'; then
+        echo "${RED}BLOCKED${RST}: $f contains a private key block"; FAIL=1
+    fi
+done <<< "$STAGED"
+
+if [[ $FAIL -ne 0 ]]; then
+    echo
+    echo "Commit aborted."
+    echo "If you are certain this is safe: git commit --no-verify"
+    exit 1
+fi
+exit 0

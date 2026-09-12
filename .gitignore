@@ -1,0 +1,9 @@
+# Local credential/config files - never commit
+.env
+.env.local
+config.json
+credentials.json
+
+# OS junk
+.DS_Store
+Thumbs.db
