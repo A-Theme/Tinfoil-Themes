@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff3c50,50:9d4edd,100:00c2ff&height=200&section=header&text=TINFOIL-THEMES&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=the%20database%20behind%20the%20whole%20A-Theme%20project&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff3c50,50:9d4edd,100:00c2ff&height=200&section=header&text=TINFOIL-THEMES&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=the%20Tinfoil%20theme%20database%20%E2%80%94%20stable%20and%20still%20served&descAlignY=58&descSize=18" width="100%"/>
 
 <img src="https://raw.githubusercontent.com/A-Theme/Theme-App/main/assets/logo.png" width="90" height="90" alt="A-Theme logo"/>
 
@@ -15,12 +15,22 @@
 
 ## Welcome to A-Theme
 
-Some of the coolest Tinfoil themes you can find, all in one place — and
-not just a collection. **This repo is the foundation the entire A-Theme
-project is built on.** Every theme's `.zip`, every screenshot, and the
-`themes.json` manifest that ties them together all live right here, and
-every other A-Theme tool exists to do something with what's in this
-repo — edit it, preview it, or install it.
+Some of the coolest Tinfoil themes you can find, all in one place. Every
+theme's `.zip`, every screenshot, and the `themes.json` manifest that ties
+them together live right here, and the Tinfoil editor and the on-console
+installer both read this repo directly.
+
+> **Where the project is now.** Tinfoil has largely been overtaken by the
+> **RomM Switch client**, and that is where new theming work happens:
+> **[RomM-Themes](https://github.com/A-Theme/RomM-Themes)** is the active
+> database, with its own editor, its own CI validation, and a
+> [sprite sheet maker](https://github.com/A-Theme/RomM-Themes/tree/main/tools/spritesheet-maker)
+> for animated backgrounds.
+>
+> This repo is **stable, not retired**: the themes stay here, `themes.json`
+> stays served, and the editor and installer keep working exactly as they do
+> today. New themes are still welcome — there is simply more happening on the
+> RomM side.
 
 ### 🎲 A few themes at random
 
@@ -46,10 +56,10 @@ repo — edit it, preview it, or install it.
 
 ## 🧩 How the whole A-Theme project fits together
 
-Three pieces share this foundation — this repo sits underneath the Tinfoil
-editor and the on-console installer, and neither needs a separate copy of
-anything. (Theming for the RomM client is a separate format with its own
-database; see [below](#-and-a-fourth-piece-for-a-different-app).)
+Two formats, each with its own database. **RomM** is the live one and has
+[its own section below](#-the-romm-side-where-the-work-is-now); the **Tinfoil**
+side is these three pieces, where this repo sits underneath the editor and the
+on-console installer and neither needs a separate copy of anything.
 
 <table>
 <tr>
@@ -91,11 +101,11 @@ files from this repo — add a theme here once, and it's immediately
 browsable from a PC, a phone, or a Switch, with nothing to keep in sync
 by hand.
 
-### 🟢 And a fourth piece, for a different app
+### 🟢 The RomM side, where the work is now
 
-The project now themes a **second** application: the **RomM Switch client**,
-which is a full SDL2 homebrew app rather than a shop. That is a separate
-format and a separate database, so it does not touch anything here:
+The **RomM Switch client** is a full SDL2 homebrew app rather than a shop, and
+themes for it can do considerably more. Separate format, separate database, so
+nothing here is affected:
 
 - **[RomM-Themes](https://github.com/A-Theme/RomM-Themes)** — the theme
   database for it. A RomM theme is a *folder* with a `theme.json`, able to
@@ -106,9 +116,15 @@ format and a separate database, so it does not touch anything here:
   — lives in Theme-App beside the Tinfoil one, with a live preview of the real
   client screens, WCAG contrast checks, and a live texture-memory budget for
   animated backgrounds.
+- **[spritesheet-maker](https://github.com/A-Theme/RomM-Themes/tree/main/tools/spritesheet-maker)**
+  — turns a GIF, a video or a single still image into an animated background:
+  it packs the sheet the way the client slices it, tells you up front whether
+  the console will accept it, and writes the matching `theme.json` block. One
+  download per platform, ffmpeg included.
 
 Nothing in this repo's `themes.json` or `.zip` layout changes because of it —
-the two databases are deliberately independent.
+the two databases are deliberately independent, so this one keeps working
+whatever happens on the RomM side.
 
 ---
 
