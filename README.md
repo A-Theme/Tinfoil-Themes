@@ -36,9 +36,9 @@ installer both read this repo directly.
 
 <!-- SCREENSHOTS:START -->
 <div align="center">
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2024042112465500_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2024011312025700-74BC04234CE7B5A3EECD5F5A8A5D8C15.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112620170400_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2024021519225200_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/BLOPS2v2.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2024030516352800_s.jpg" width="320"/>
 </div>
 <!-- SCREENSHOTS:END -->
 
