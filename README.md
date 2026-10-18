@@ -7,6 +7,7 @@
 <p>
   <img src="https://img.shields.io/badge/themes-community%20%2B%20original-00c2ff?style=for-the-badge" alt="themes"/>
   <img src="https://img.shields.io/badge/format-Tinfoil%20theme.json-9d4edd?style=for-the-badge" alt="format"/>
+  <a href="#-use-them-in-cyberfoil"><img src="https://img.shields.io/badge/CyberFoil-all%20170%20convert-9d4edd?style=for-the-badge" alt="every theme converts for CyberFoil"/></a>
 </p>
 
 </div>
@@ -133,6 +134,27 @@ whatever happens on the RomM side.
 **[@Aramaki#2109](https://discord.gg/jhJ9jcUn)**
 
 ---
+
+## 🟣 Use them in CyberFoil
+
+[CyberFoil](https://github.com/luketanti/CyberFoil), the Switch installer, reads
+themes of its own since 1.5.0 — and its README says Tinfoil theme files need
+adapting. The **[CyberFoil editor](https://github.com/A-Theme/Theme-App/blob/main/cyberfoil-theme-editor.html)**
+in Theme-App does that: **Convert a theme → Tinfoil** lists this database, or
+import any theme's `.zip` directly.
+
+- Colours are read by what they do in Tinfoil's layout — the side menu becomes
+  CyberFoil's bars and panels, the selected tile's text and fill its focus pair,
+  and the progress and scroll bars carry straight across.
+- The wallpaper comes along, the logo is fitted into CyberFoil's banner, and
+  BMPs are redrawn as PNG, which CyberFoil's decoder is documented for.
+- Tinfoil's see-through menus often go unreadable over CyberFoil's full-width
+  bars, so where text would not read over the wallpaper, that bar is made more
+  opaque — same hue — just far enough. The editor lists every change.
+- Music, tile sizes and the HOME-menu patches some zips carry (`.ips`, `.szs`,
+  `.nxtheme`) are not part of a CyberFoil theme and are listed, not carried.
+
+All 170 themes here convert, and CyberFoil's own loader lists every one.
 
 ## 📥 Installing a theme — three ways
 
