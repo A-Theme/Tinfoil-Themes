@@ -37,9 +37,9 @@ installer both read this repo directly.
 
 <!-- SCREENSHOTS:START -->
 <div align="center">
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023082023115400_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112816211900_s.jpg" width="320"/>
-<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023070613523200_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023091222040300_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2024030516353400_s.jpg" width="320"/>
+<img src="https://raw.githubusercontent.com/A-Theme/Tinfoil-Themes/main/Theme%20Screen%20Shots/2023112620172100_s.jpg" width="320"/>
 </div>
 <!-- SCREENSHOTS:END -->
 
